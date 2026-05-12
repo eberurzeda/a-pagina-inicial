@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #f4f1ea;
+  color: #1f1f1f;
+  line-height: 1.7;
+}
+
+.cabecalho {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #1f1f1f;
+  color: #f4f1ea;
+}
+
+.cabecalho a {
+  color: #f4f1ea;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cabecalho a:visited {
+  color: #f4f1ea;
+}
+
+.cabecalho a:hover {
+  text-decoration: underline;
+}
+
+.cabecalho h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.cabecalho p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.conteudo,
+.capitulo {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.apresentacao h2,
+.capitulos h2,
+.capitulo h1 {
+  line-height: 1.2;
+}
+
+.apresentacao p,
+.capitulo article p {
+  font-size: 1.15rem;
+  margin-bottom: 1.4rem;
+}
+
+.botao,
+.navegacao-capitulos a,
+#botao-tema {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1rem;
+  background-color: #1f1f1f;
+  color: #f4f1ea;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.botao:hover,
+.navegacao-capitulos a:hover,
+#botao-tema:hover {
+  opacity: 0.85;
+}
+
+.capitulos ol {
+  padding-left: 1.4rem;
+}
+
+.capitulos a {
+  color: #1f1f1f;
+  font-weight: bold;
+}
+
+.rodape {
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+body.tema-escuro {
+  background-color: #151515;
+  color: #eeeeee;
+}
+
+body.tema-escuro .cabecalho {
+  background-color: #000000;
+}
+
+body.tema-escuro .botao,
+body.tema-escuro .navegacao-capitulos a,
+body.tema-escuro #botao-tema {
+  background-color: #eeeeee;
+  color: #151515;
+}
+
+@media (max-width: 600px) {
+  .cabecalho {
+    padding: 2rem 1rem;
+  }
+
+  .cabecalho h1 {
+    font-size: 2rem;
+  }
+
+  .apresentacao p,
+  .capitulo article p {
+    font-size: 1.05rem;
+  }
+}
+
+.dialogo {
+  margin-left: 2rem;
+  font-style: italic;
+}
+
+pre {
+  background-color: #1f1f1f;
+  color: #f4f1ea;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+code {
+  font-family: Consolas, Monaco, monospace;
+}
+
+.citacao {
+  margin-left: 2rem;
+  padding-left: 1rem;
+  border-left: 3px solid #1f1f1f;
+  font-style: italic;
+}
+
+body.tema-escuro .citacao {
+  border-left-color: #eeeeee;
+}
