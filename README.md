@@ -4,6 +4,12 @@
 
 O projeto une literatura, memória e tecnologia em uma experiência de leitura pensada para a tela. A narrativa acompanha Henrique, um professor de Língua Portuguesa e Literatura em transição para o desenvolvimento web.
 
+## Projeto online
+
+Acesse o conto digital aqui:
+
+https://eberurzeda.github.io/a-pagina-inicial/
+
 ## Sobre o projeto
 
 Este projeto nasceu como parte do meu portfólio de transição de carreira, unindo minha experiência como professor, escritor e estudante de programação.
