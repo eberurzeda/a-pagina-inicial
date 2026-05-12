@@ -5,26 +5,26 @@
 body {
   margin: 0;
   font-family: Georgia, 'Times New Roman', serif;
-  background-color: #f4f1ea;
-  color: #1f1f1f;
+  background-color: #f4f7fb;
+  color: #111827;
   line-height: 1.7;
 }
 
 .cabecalho {
   padding: 3rem 1rem;
   text-align: center;
-  background-color: #1f1f1f;
-  color: #f4f1ea;
+  background-color: #1e3a8a;
+  color: #f4f7fb;
 }
 
 .cabecalho a {
-  color: #f4f1ea;
+  color: #f4f7fb;
   text-decoration: none;
   font-weight: bold;
 }
 
 .cabecalho a:visited {
-  color: #f4f1ea;
+  color: #f4f7fb;
 }
 
 .cabecalho a:hover {
@@ -52,6 +52,7 @@ body {
 .capitulos h2,
 .capitulo h1 {
   line-height: 1.2;
+  color: #172554;
 }
 
 .apresentacao p,
@@ -66,18 +67,19 @@ body {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.7rem 1rem;
-  background-color: #1f1f1f;
-  color: #f4f1ea;
+  background-color: #1e3a8a;
+  color: #f4f7fb;
   text-decoration: none;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .botao:hover,
 .navegacao-capitulos a:hover,
 #botao-tema:hover {
-  opacity: 0.85;
+  background-color: #2563eb;
 }
 
 .capitulos ol {
@@ -85,7 +87,7 @@ body {
 }
 
 .capitulos a {
-  color: #1f1f1f;
+  color: #1e3a8a;
   font-weight: bold;
 }
 
@@ -95,21 +97,100 @@ body {
   font-size: 0.9rem;
 }
 
+.dialogo {
+  margin-left: 2rem;
+  font-style: italic;
+}
+
+pre {
+  background-color: #172554;
+  color: #dbeafe;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+code {
+  font-family: Consolas, Monaco, monospace;
+  color: #1e3a8a;
+}
+
+pre code {
+  color: #dbeafe;
+}
+
+.citacao {
+  margin-left: 2rem;
+  padding-left: 1rem;
+  border-left: 3px solid #1e3a8a;
+  font-style: italic;
+}
+
+/* Modo escuro */
+
 body.tema-escuro {
-  background-color: #151515;
-  color: #eeeeee;
+  background-color: #0f172a;
+  color: #e5e7eb;
 }
 
 body.tema-escuro .cabecalho {
-  background-color: #000000;
+  background-color: #172554;
+  color: #e5e7eb;
+}
+
+body.tema-escuro .cabecalho a,
+body.tema-escuro .cabecalho a:visited {
+  color: #e5e7eb;
+}
+
+body.tema-escuro .capitulo,
+body.tema-escuro .conteudo {
+  color: #e5e7eb;
+}
+
+body.tema-escuro .apresentacao h2,
+body.tema-escuro .capitulos h2,
+body.tema-escuro .capitulo h1 {
+  color: #dbeafe;
+}
+
+body.tema-escuro .capitulos a {
+  color: #93c5fd;
 }
 
 body.tema-escuro .botao,
 body.tema-escuro .navegacao-capitulos a,
 body.tema-escuro #botao-tema {
-  background-color: #eeeeee;
-  color: #151515;
+  background-color: #dbeafe;
+  color: #172554;
 }
+
+body.tema-escuro .botao:hover,
+body.tema-escuro .navegacao-capitulos a:hover,
+body.tema-escuro #botao-tema:hover {
+  background-color: #93c5fd;
+}
+
+body.tema-escuro pre {
+  background-color: #020617;
+  color: #dbeafe;
+}
+
+body.tema-escuro code {
+  color: #93c5fd;
+}
+
+body.tema-escuro pre code {
+  color: #dbeafe;
+}
+
+body.tema-escuro .citacao {
+  border-left-color: #93c5fd;
+}
+
+/* Responsivo */
 
 @media (max-width: 600px) {
   .cabecalho {
@@ -124,34 +205,4 @@ body.tema-escuro #botao-tema {
   .capitulo article p {
     font-size: 1.05rem;
   }
-}
-
-.dialogo {
-  margin-left: 2rem;
-  font-style: italic;
-}
-
-pre {
-  background-color: #1f1f1f;
-  color: #f4f1ea;
-  padding: 1rem;
-  border-radius: 6px;
-  overflow-x: auto;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-code {
-  font-family: Consolas, Monaco, monospace;
-}
-
-.citacao {
-  margin-left: 2rem;
-  padding-left: 1rem;
-  border-left: 3px solid #1f1f1f;
-  font-style: italic;
-}
-
-body.tema-escuro .citacao {
-  border-left-color: #eeeeee;
 }
