@@ -4,6 +4,8 @@
 
 O projeto une literatura, memória e tecnologia em uma experiência de leitura pensada para a tela. A narrativa acompanha Henrique, um professor de Língua Portuguesa e Literatura em transição para o desenvolvimento web.
 
+Além da interface em HTML, CSS e JavaScript, o projeto possui um script SQL experimental para organizar elementos narrativos do conto, como capítulos, personagens, temas e lugares.
+
 ## Projeto online
 
 Acesse o conto digital aqui:
@@ -21,8 +23,22 @@ A proposta é transformar um conto literário em uma experiência digital, usand
 - HTML5
 - CSS3
 - JavaScript
+- MySQL
+- MySQL Workbench
 - Git
 - GitHub
+
+## Banco de dados
+
+O projeto também inclui um script SQL criado durante meus estudos de MySQL.
+
+O banco de dados `a_pagina_inicial` foi pensado para organizar informações narrativas do conto digital, como capítulos, personagens, temas e lugares.
+
+Arquivo do banco:
+
+`sql/banco-a-pagina-inicial.sql`
+
+Esse script contém a criação do banco, das tabelas e alguns registros iniciais para estudo e documentação do projeto.
 
 ## Funcionalidades
 
