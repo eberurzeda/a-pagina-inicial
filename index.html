@@ -3,43 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>A Página Inicial | Conto digital interativo</title>
+
     <meta
       name="description"
       content="Conto digital interativo criado com HTML, CSS e JavaScript, unindo literatura, memória, tecnologia e transição de carreira."
     />
+
     <meta property="og:title" content="A Página Inicial" />
     <meta
       property="og:description"
       content="Um conto digital interativo sobre memória, tecnologia e recomeço profissional."
     />
     <meta property="og:type" content="website" />
+
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
+    <div class="barra-container" aria-hidden="true">
+      <div class="barra-progresso"></div>
+    </div>
+
     <header class="cabecalho">
       <h1>A Página Inicial</h1>
-      <p>Conto digital interativo criado com HTML, CSS e JavaScript.</p>
+
+      <p>
+        Conto digital interativo criado com HTML, CSS, JavaScript e SQL
+        experimental.
+      </p>
+
+      <button id="botao-tema" type="button" aria-label="Alternar tema claro e escuro">
+        Alternar tema
+      </button>
     </header>
 
     <main class="conteudo">
-      <section class="apresentacao">
-        <h2>
+      <section class="apresentacao" aria-labelledby="titulo-apresentacao">
+        <h2 id="titulo-apresentacao">
           Uma experiência literária sobre memória, tecnologia e transição de
           carreira
         </h2>
 
-        <p>
-          A Página Inicial é um conto digital interativo sobre um professor de
-          Língua Portuguesa e Literatura em transição para o desenvolvimento
-          web.
+        <p class="subtitulo-capitulo">
+          Um conto sobre recomeço, linguagem, aprendizagem e a construção de uma
+          nova página profissional.
         </p>
 
         <p>
-          O projeto une literatura, HTML, CSS e JavaScript para criar uma
-          leitura pensada para a tela.
+          <strong>A Página Inicial</strong> é um conto digital interativo sobre
+          um professor de Língua Portuguesa e Literatura em transição para o
+          desenvolvimento web.
         </p>
+
+        <p>
+          O projeto une literatura, HTML, CSS, JavaScript e SQL experimental
+          para criar uma leitura pensada para a tela e, ao mesmo tempo, funcionar
+          como peça de portfólio.
+        </p>
+
+        <p id="ultimo-capitulo"></p>
 
         <img
           class="imagem-apresentacao"
@@ -50,24 +75,77 @@
         <a class="botao" href="capitulos/body.html">Começar leitura</a>
       </section>
 
-      <section class="capitulos">
-        <h2>Capítulos</h2>
+      <section class="capitulos" aria-labelledby="titulo-capitulos">
+        <h2 id="titulo-capitulos">Capítulos</h2>
+
+        <p>
+          Cada capítulo usa um termo do desenvolvimento web como metáfora para
+          uma etapa da narrativa.
+        </p>
 
         <ol>
-          <li><a href="capitulos/body.html">Body</a></li>
-          <li><a href="capitulos/header.html">Header</a></li>
-          <li><a href="capitulos/main.html">Main</a></li>
-          <li><a href="capitulos/link.html">Link</a></li>
-          <li><a href="capitulos/script.html">Script</a></li>
-          <li><a href="capitulos/breakpoint.html">Breakpoint</a></li>
-          <li><a href="capitulos/deploy.html">Deploy</a></li>
+          <li>
+            <a href="capitulos/body.html">Body</a>
+            — o corpo da página, da memória e da história.
+          </li>
+
+          <li>
+            <a href="capitulos/header.html">Header</a>
+            — aquilo que aparece primeiro, antes mesmo da leitura profunda.
+          </li>
+
+          <li>
+            <a href="capitulos/main.html">Main</a>
+            — o conteúdo central, onde a vida começa a ganhar estrutura.
+          </li>
+
+          <li>
+            <a href="capitulos/link.html">Link</a>
+            — as conexões entre pessoas, lugares e escolhas.
+          </li>
+
+          <li>
+            <a href="capitulos/script.html">Script</a>
+            — os comandos invisíveis que movem a história.
+          </li>
+
+          <li>
+            <a href="capitulos/breakpoint.html">Breakpoint</a>
+            — o ponto de ruptura em que tudo precisa se adaptar.
+          </li>
+
+          <li>
+            <a href="capitulos/deploy.html">Deploy</a>
+            — quando o projeto, enfim, vai para o mundo.
+          </li>
         </ol>
       </section>
+
+      <nav class="navegacao-capitulos" aria-label="Navegação dos capítulos">
+        <a href="capitulos/body.html">Body</a>
+        <a href="capitulos/header.html">Header</a>
+        <a href="capitulos/main.html">Main</a>
+        <a href="capitulos/link.html">Link</a>
+        <a href="capitulos/script.html">Script</a>
+        <a href="capitulos/breakpoint.html">Breakpoint</a>
+        <a href="capitulos/deploy.html">Deploy</a>
+      </nav>
     </main>
 
     <footer class="rodape">
-      <p>Projeto criado por Eber Urzeda dos Santos.</p>
+      <p>
+        Projeto criado por
+        <strong>Eber Urzeda dos Santos</strong>.
+      </p>
+
+      <p>
+        Literatura, memória e tecnologia em uma experiência digital de leitura.
+      </p>
     </footer>
+
+    <button id="voltar-topo" type="button" aria-label="Voltar ao topo">
+      ↑
+    </button>
 
     <script src="js/script.js"></script>
   </body>
