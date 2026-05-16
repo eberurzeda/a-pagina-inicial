@@ -2,29 +2,42 @@
   box-sizing: border-box;
 }
 
+:root {
+  --azul-principal: #1e3a8a;
+  --azul-profundo: #172554;
+  --azul-hover: #2563eb;
+  --azul-claro: #dbeafe;
+  --azul-link-escuro: #93c5fd;
+  --fundo-claro: #f4f7fb;
+  --texto-claro: #111827;
+  --fundo-escuro: #0f172a;
+  --texto-escuro: #e5e7eb;
+  --foco: #facc15;
+}
+
 body {
   margin: 0;
   font-family: Georgia, 'Times New Roman', serif;
-  background-color: #f4f7fb;
-  color: #111827;
+  background-color: var(--fundo-claro);
+  color: var(--texto-claro);
   line-height: 1.7;
 }
 
 .cabecalho {
   padding: 3rem 1rem;
   text-align: center;
-  background-color: #1e3a8a;
-  color: #f4f7fb;
+  background-color: var(--azul-principal);
+  color: var(--fundo-claro);
 }
 
 .cabecalho a {
-  color: #f4f7fb;
+  color: var(--fundo-claro);
   text-decoration: none;
   font-weight: bold;
 }
 
 .cabecalho a:visited {
-  color: #f4f7fb;
+  color: var(--fundo-claro);
 }
 
 .cabecalho a:hover {
@@ -52,7 +65,7 @@ body {
 .capitulos h2,
 .capitulo h1 {
   line-height: 1.2;
-  color: #172554;
+  color: var(--azul-profundo);
 }
 
 .apresentacao p,
@@ -61,14 +74,23 @@ body {
   margin-bottom: 1.4rem;
 }
 
+.imagem-apresentacao {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  margin: 2rem 0 0;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
 .botao,
 .navegacao-capitulos a,
 #botao-tema {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.7rem 1rem;
-  background-color: #1e3a8a;
-  color: #f4f7fb;
+  background-color: var(--azul-principal);
+  color: var(--fundo-claro);
   text-decoration: none;
   border: none;
   border-radius: 6px;
@@ -79,7 +101,13 @@ body {
 .botao:hover,
 .navegacao-capitulos a:hover,
 #botao-tema:hover {
-  background-color: #2563eb;
+  background-color: var(--azul-hover);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--foco);
+  outline-offset: 3px;
 }
 
 .capitulos ol {
@@ -87,7 +115,7 @@ body {
 }
 
 .capitulos a {
-  color: #1e3a8a;
+  color: var(--azul-principal);
   font-weight: bold;
 }
 
@@ -103,8 +131,8 @@ body {
 }
 
 pre {
-  background-color: #172554;
-  color: #dbeafe;
+  background-color: var(--azul-profundo);
+  color: var(--azul-claro);
   padding: 1rem;
   border-radius: 6px;
   overflow-x: auto;
@@ -114,80 +142,80 @@ pre {
 
 code {
   font-family: Consolas, Monaco, monospace;
-  color: #1e3a8a;
+  color: var(--azul-principal);
 }
 
 pre code {
-  color: #dbeafe;
+  color: var(--azul-claro);
 }
 
 .citacao {
   margin-left: 2rem;
   padding-left: 1rem;
-  border-left: 3px solid #1e3a8a;
+  border-left: 3px solid var(--azul-principal);
   font-style: italic;
 }
 
 /* Modo escuro */
 
 body.tema-escuro {
-  background-color: #0f172a;
-  color: #e5e7eb;
+  background-color: var(--fundo-escuro);
+  color: var(--texto-escuro);
 }
 
 body.tema-escuro .cabecalho {
-  background-color: #172554;
-  color: #e5e7eb;
+  background-color: var(--azul-profundo);
+  color: var(--texto-escuro);
 }
 
 body.tema-escuro .cabecalho a,
 body.tema-escuro .cabecalho a:visited {
-  color: #e5e7eb;
+  color: var(--texto-escuro);
 }
 
 body.tema-escuro .capitulo,
 body.tema-escuro .conteudo {
-  color: #e5e7eb;
+  color: var(--texto-escuro);
 }
 
 body.tema-escuro .apresentacao h2,
 body.tema-escuro .capitulos h2,
 body.tema-escuro .capitulo h1 {
-  color: #dbeafe;
+  color: var(--azul-claro);
 }
 
 body.tema-escuro .capitulos a {
-  color: #93c5fd;
+  color: var(--azul-link-escuro);
 }
 
 body.tema-escuro .botao,
 body.tema-escuro .navegacao-capitulos a,
 body.tema-escuro #botao-tema {
-  background-color: #dbeafe;
-  color: #172554;
+  background-color: var(--azul-claro);
+  color: var(--azul-profundo);
 }
 
 body.tema-escuro .botao:hover,
 body.tema-escuro .navegacao-capitulos a:hover,
 body.tema-escuro #botao-tema:hover {
-  background-color: #93c5fd;
+  background-color: var(--azul-link-escuro);
 }
 
 body.tema-escuro pre {
   background-color: #020617;
-  color: #dbeafe;
+  color: var(--azul-claro);
 }
 
 body.tema-escuro code {
-  color: #93c5fd;
+  color: var(--azul-link-escuro);
 }
 
 body.tema-escuro pre code {
-  color: #dbeafe;
+  color: var(--azul-claro);
 }
 
 body.tema-escuro .citacao {
-  border-left-color: #93c5fd;
+  border-left-color: var(--azul-link-escuro);
 }
 
 /* Responsivo */
@@ -204,5 +232,22 @@ body.tema-escuro .citacao {
   .apresentacao p,
   .capitulo article p {
     font-size: 1.05rem;
+  }
+
+  .dialogo,
+  .citacao {
+    margin-left: 0;
+  }
+
+  .navegacao-capitulos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .navegacao-capitulos a {
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
   }
 }

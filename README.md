@@ -26,7 +26,17 @@ A proposta é transformar um conto literário em uma experiência digital, usand
 - MySQL
 - MySQL Workbench
 - Git
-- GitHub
+- GitHub Pages
+
+## Funcionalidades
+
+- Página inicial do conto
+- Capítulos em páginas separadas
+- Navegação entre capítulos
+- Modo claro e escuro
+- Tema salvo durante a navegação
+- Paleta visual inspirada na caixa azul do conto
+- Layout responsivo para celular, tablet e computador
 
 ## Banco de dados
 
@@ -38,16 +48,7 @@ Arquivo do banco:
 
 `sql/banco-a-pagina-inicial.sql`
 
-Esse script contém a criação do banco, das tabelas e alguns registros iniciais para estudo e documentação do projeto.
-
-## Funcionalidades
-
-- Página inicial do conto
-- Capítulo em página separada
-- Navegação entre páginas
-- Modo claro e escuro
-- Paleta visual inspirada na “caixa azul” do conto
-- Layout responsivo para celular e computador
+Esse script é um estudo complementar e não é necessário para executar o site no GitHub Pages.
 
 ## Estrutura do projeto
 
@@ -55,15 +56,53 @@ Esse script contém a criação do banco, das tabelas e alguns registros iniciai
 a-pagina-inicial/
 ├── index.html
 ├── README.md
+├── assets/
+│   ├── favicon/
+│   │   └── favicon.svg
+│   └── imagens/
+│       └── a-pagina-inicial.jpg
 ├── capitulos/
-│   └── body.html
+│   ├── body.html
+│   ├── header.html
+│   ├── main.html
+│   ├── link.html
+│   ├── script.html
+│   ├── breakpoint.html
+│   └── deploy.html
 ├── css/
 │   └── style.css
 ├── js/
 │   └── script.js
-└── assets/
-    └── imagens/
+└── sql/
+    └── banco-a-pagina-inicial.sql
 ```
+
+## Como executar localmente
+
+Por ser um projeto estático, basta abrir o arquivo `index.html` no navegador.
+
+Também é possível usar a extensão Live Server no VS Code para navegar pelo projeto durante o desenvolvimento.
+
+## O que aprendi
+
+- Estruturar páginas com HTML semântico
+- Organizar capítulos em arquivos separados
+- Criar estilos responsivos com CSS
+- Implementar modo claro e escuro com JavaScript
+- Usar GitHub Pages para publicar um projeto estático
+- Relacionar escrita literária, tecnologia e portfólio profissional
+
+## Checklist de teste manual
+
+Antes de publicar uma nova versão, conferir:
+
+- A página inicial abre corretamente
+- Todos os capítulos carregam
+- Os links de capítulo anterior e próximo funcionam
+- O botão de tema alterna entre claro e escuro
+- O tema escolhido continua ativo ao trocar de página
+- O layout continua legível no celular
+- O README descreve a estrutura atual do projeto
 
 ## Autor
 
